@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo after long time</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a id="home"></a>
+        <header>
+            <img src="./assets/logo.svg" class="logo" alt="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./assets/ham.svg" alt="ham bugger toggle menu" calss="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="./assets/exit.svg" alt="nav bar image " id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testi" >Testimonals</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="./assets/server.svg" alt="image here carasoul serveer graphics " class="server">
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead"> Go serverless and pay only for what you use </p>
+
+            <img src="./assets/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <a id="about"></a>
+            <ul>
+                <li>
+                    <img src="./assets/icon-1.svg" alt="this is the three image shown in the browser">
+                    <p>this is the paragraph that describe the content of the image and the description of the
+                        elements
+                        this is the paragraph that describe the content of the image and the description of the
+                        elements....</p>
+                </li>
+                <li>
+                    <img src="./assets/icon-2.svg" alt="this is the three image shown in the browser">
+                    <p>this is the paragraph that describe the content of the image and the description of the
+                        elements
+                        this is the paragraph that describe the content of the image and the description of the
+                        elements....</p>
+                </li>
+                <li>
+                    <img src="./assets/icon-3.svg" alt="this is the three image shown in the browser">
+                    <p>this is the paragraph that describe the content of the image and the description of the
+                        elements
+                        this is the paragraph that describe the content of the image and the description of the
+                        elements....</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <a id="testi"></a>
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img class="arjun-img" src="assets/banner2.jpg" alt="user picture as the review">
+                        <blockquote>Hi! I am Arjun Kandel, a web designer/developer focused on crafting web experiences.
+                            I would simply describe ‘Design’ as my Passion</blockquote>
+                        <figcaption>- Arjun kandel</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="arjun-img" src="assets/banner2.jpg" alt="user picture as the review">
+                        <blockquote>Hi! I am Arjun Kandel, a web designer/developer focused on crafting web experiences.
+                            I would simply describe ‘Design’ as my Passion</blockquote>
+                        <figcaption> - Arjun kandel</figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="container-trail">
+        <div class="container">
+            <h2>
+                Start your free trial now!
+            </h2>
+            <a href="#" class="cta">Get started</a>
+        </div>
+    </div>
+    <footer>
+        <a id="contact"></a>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="./assets/logo-white.svg" class="logo" alt="logo">
+                </a>
+                <p class="address">kathmandu nepal</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of service </a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById('menu')
+        var nav = document.getElementById('nav')
+        var exit = document.getElementById('exit')
+
+        // var home = document.getElementById('home')
+        // var about = document.getElementById('about')
+        // var testi = document.getElementById('testi')
+        // var contact = document.getElementById('contact')
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        })
+
+        exit.addEventListener('click', function (e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+        })
+
+        // home.addEventListener('click', function (e) {
+        //     nav.classList.add('hide-mobile');
+        //     e.preventDefault();
+        // })
+        // about.addEventListener('click', function (e) {
+        //     nav.classList.add('hide-mobile');
+        //     e.preventDefault();
+        // })
+        // testi.addEventListener('click', function (e) {
+        //     nav.classList.add('hide-mobile');
+        //     e.preventDefault();
+        // })
+        // contact.addEventListener('click', function (e) {
+        //     nav.classList.add('hide-mobile');
+        //     e.preventDefault();
+    </script>
+</body>
+
+</html>
